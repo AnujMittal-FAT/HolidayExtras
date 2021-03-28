@@ -1,0 +1,109 @@
+.table {
+    margin-bottom: 2rem;
+    margin-top: 3rem;
+    thead {
+        text-align: center;
+
+        th {
+            padding-top: 0;
+        }
+
+        span {
+            display: block;
+            font-size: 12px;
+            font-weight: lighter;
+        }
+    }
+
+    tbody tr {
+        background: $white-50;
+    }
+
+    td,th {
+        border-top: none;
+        border-left: 1px dotted $light-grey;
+        &:first-child {
+            border-left: none;
+            min-width: 10rem;
+        }
+        &:last-child {
+            border-left: none;
+        }
+    }
+
+    td {
+        text-align: center;
+        vertical-align: middle;
+        padding: 0.3rem 0.5rem;
+
+        &:first-child {
+            border-left: 3px solid $primary;
+            text-align: left;
+            position: relative;
+            padding-left: 1.5rem;
+
+            &::before {
+                width: 3px;
+                height: 100%;
+                background: $primary;
+            }
+        }
+
+        input {
+            margin: 0 auto;
+            text-align: center;
+            padding: 0.25rem;
+            &.nsvcode {
+                max-width: 6rem;
+                &[readonly] {
+                    border: none;
+                    background: none !important;
+                }
+            }
+
+            &.threshold {
+                max-width: 3rem;
+                &[readonly] {
+                    border: none;
+                    background: none !important;
+                }
+            }
+        }
+    }
+
+    .spacer {
+        background: none;
+
+        &:hover {
+            background: none;
+        }
+
+        td {
+            height: 6px;
+            padding: 0;
+
+            &:first-child {
+                border-color: transparent;
+            }
+        }
+    }
+
+    .btn-delete {
+        padding: 0.25rem;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        background: transparent;
+        font-size: 1.25rem;
+        border: none;
+
+        &:hover {
+            background: $black;
+            color: $white;
+        }
+
+        svg {
+            margin: 0;
+        }
+    }
+}

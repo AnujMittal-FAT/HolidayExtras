@@ -1,0 +1,25 @@
+@charset "utf-8";
+
+// Styles
+// Import styles
+@import "../node_modules/@coreui/coreui/scss/coreui";
+// @import "~@coreui/coreui/scss/coreui.scss";
+
+// Temp fix for reactstrap
+@import "../node_modules/@coreui/coreui/scss/_dropdown-menu-right";
+// @import "~@coreui/coreui/scss/_dropdown-menu-right.scss";
+
+// Site styles
+@import "./styles/variables";
+
+@import "./styles/scss/base";
+@import "./styles/scss/molecules/search";
+@import "./styles/scss/molecules/signInput";
+
+@import "./styles/scss/organisms/header";
+@import "./styles/scss/organisms/sidebar";
+@import "./styles/scss/organisms/footer";
+@import "./styles/scss/organisms/location";
+@import "./styles/scss/organisms/tables";
+
+@import "./styles/scss/pages/dashboard";

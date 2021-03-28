@@ -1,0 +1,27 @@
+.c-footer {
+    justify-content: flex-end;
+    border-top: none;
+    padding: 0;
+    margin: 0;
+    align-items: inherit;
+}
+
+.footer-content {
+    background: $dark-grey;
+    color: $white;
+    border-top-left-radius: 2rem;
+    
+    .row {
+        height: 100%;
+        align-items: center;
+    }
+    .fa-heart {
+        color: $danger;
+        filter: $dropshadow;
+    }
+
+    &-copy { 
+        display: block;
+        text-align: right; 
+    }
+}

@@ -1,0 +1,40 @@
+.location {
+
+    &-list {
+        padding-top: 3rem;
+    }
+
+    &-holder {
+        font-weight: bold;
+        margin-bottom: 5rem;
+    }
+
+    &-name {
+        padding: 1rem 1.5rem;
+        border-radius: 1rem;
+        background: white;
+        display: block;
+        border-left: 8px solid $amber;
+        margin-bottom: 1rem;
+        font-size: 1rem;
+        &:hover {
+            text-decoration: none;
+            background-color: $amber;
+            box-shadow: none !important;
+            // p { color: $white !important;}
+        }
+    }
+
+    &-copy {
+        display: block;
+        float: right;
+        padding: 0.25rem 0.5rem;
+        &:hover {
+            background: $text-body;
+            color: $white !important;
+        }
+        &-icon {
+            margin-right: 0.5rem;
+        }
+    }
+}

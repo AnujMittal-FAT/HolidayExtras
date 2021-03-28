@@ -1,0 +1,83 @@
+.dash-row {
+    // justify-content: space-around;
+
+    .dash-item {
+        background: $white;
+        border-radius: 0.5rem;
+        filter: $dropshadow;
+        padding: 1rem;
+        margin-top: 2rem;
+
+        a {
+            color: $text-body;
+            text-decoration: none;
+        }
+
+        &-title {
+            font-size: 1.25rem;
+            font-weight: bold;
+            margin-bottom: 0;
+            height: 100%;
+            display: flex;
+            align-items: center;
+        }
+
+        // Dash panel
+        .dash-urgent {
+            font-weight: bold;
+            text-align: center;
+            &-percentage {
+                background: $light-grey;
+                border-radius: 50rem;
+                padding: 0.5rem;
+                height: 4.5rem;
+                width: 4.5rem;
+                margin-bottom: 0.75rem;
+                position: relative;
+            }
+            &-colour {
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+            &-bumper {
+                background: $white;
+                border-radius: 50rem;
+                height: 100%;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 1.15rem;
+                filter: $dropshadow;
+            }
+        }
+        // Dash button
+        .dash-icon {
+            font-size: 1.5rem;
+            color: $white;
+
+            &-holder {
+                border: 2px solid $border-25;
+                border-radius: 1rem;
+                display: flex;
+                height: 3rem;
+                width: 3rem;
+                justify-content: center;
+            }
+
+            &-bumper {
+                text-align: center;
+                background: $black;
+                border-radius: 50rem;
+                height: 75%;
+                width: 75%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                align-self: center;
+                filter: $dropshadow;
+            }
+        }
+    }
+}

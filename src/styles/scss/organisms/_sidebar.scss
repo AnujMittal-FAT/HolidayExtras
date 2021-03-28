@@ -1,0 +1,65 @@
+.c-sidebar {
+    background: none;
+    padding: 1rem;
+    align-items: center;
+
+    .sidebar {
+        &-name {
+            color: $primary;
+            display: none;
+            margin-top: 0.5rem;
+        }
+
+        &-bumper {
+            width: 3.15rem;
+            height: 3.15rem;
+            border-radius: 50rem;
+            border: 1px solid transparent;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    svg {
+        display: block;
+        color: $primary;
+        fill: $primary;
+    }
+
+    ul {
+        background: $light-grey;
+        border-radius: 50rem;
+        justify-content: space-between;
+        width: 6rem;
+
+        a {
+            flex-direction: column;
+            font-size: 1.5rem;
+
+            svg#Patients_icon #staffcircle {
+                fill: $white;
+            }
+
+            &.c-active,
+            &:hover {
+                background: transparent !important;
+
+                .sidebar-bumper {
+                    background: $primary;
+                    color: $white;
+                    border: 3px solid $border-25;
+                }
+
+                svg {
+                    color: $white;
+                    fill: $white;
+                    &#Patients_icon #staffcircle {
+                        fill: $primary;
+                    }
+                }
+            }
+        }
+    }
+}
+
